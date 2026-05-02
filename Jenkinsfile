@@ -32,7 +32,7 @@ pipeline {
 
         stage('Deploy to Staging') {
             steps {
-                echo 'Deploy to Staging: Deploy the application to an AWS EC2 staging server.'
+                echo 'Deploy to Staging: Deploy the application to an AWS EC2 staging server..'
             }
         }
 
