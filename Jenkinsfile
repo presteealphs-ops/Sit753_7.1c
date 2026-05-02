@@ -8,25 +8,25 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Build: Build the code using Maven to compile and package the code.'
+                echo 'Build: Build the code by compiling and packaging it with Maven.'
             }
         }
 
         stage('Unit and Integration Tests') {
             steps {
-                echo 'Unit and Integration Tests: Run unit and integration tests using JUnit and Selenium.'
+                echo 'Unit and Integration Tests: Use JUnit and Selenium to run unit and integration tests.'
             }
         }
 
         stage('Code Analysis') {
             steps {
-                echo 'Code Analysis: Analyse the code using SonarQube to check code quality and standards.'
+                echo 'Code Analysis: Use SonarQube to analyze the code and verify its standards and quality.'
             }
         }
 
         stage('Security Scan') {
             steps {
-                echo 'Security Scan: Scan the code using OWASP Dependency-Check to identify vulnerabilities.'
+                echo 'Security Scan: To find vulnerabilities, use OWASP Dependency-Check to scan the code.'
             }
         }
 
@@ -38,7 +38,7 @@ pipeline {
 
         stage('Integration Tests on Staging') {
             steps {
-                echo 'Integration Tests on Staging: Run integration tests on staging using Postman/Newman.'
+                echo 'Integration Tests on Staging: Use Postman/Newman to run integration tests on staging.'
             }
         }
 
